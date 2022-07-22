@@ -23,7 +23,7 @@ if (action.type=='increment')
     { return(
 
         {
-            counter:state.counter-5
+            counter:state.counter-action.amount
         }
 
 )}
@@ -31,7 +31,7 @@ if(action.type=='incrementby5')
 { return(
 
     {
-        counter:state.counter+5
+        counter:state.counter+action.amount
     }
 
 )}
